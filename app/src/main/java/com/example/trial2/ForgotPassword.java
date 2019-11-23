@@ -1,6 +1,8 @@
 package com.example.trial2;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 import android.os.Bundle;
@@ -18,7 +20,14 @@ public class ForgotPassword extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
+        Toolbar myChildToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(myChildToolbar);
 
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
         email = findViewById(R.id.mail);
         submit = findViewById(R.id.submit);
         email.addTextChangedListener(sub);
