@@ -27,9 +27,10 @@
                 android:value=".LaunchScreen" />
         </activity>
         <activity android:name=".LaunchScreen">
+        </activity>
+        <activity android:name=".MainState">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
