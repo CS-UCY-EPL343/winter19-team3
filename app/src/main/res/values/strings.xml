@@ -75,4 +75,19 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">@dimen/normal_padding</item>
     </style>
+
+    <string name="pass_name">  Andreas Ioannou</string>
+    <string name="pass_field_of_study">  Computer Science, UCY</string>
+    <string name="pass_ranking">Passenger Ranking: 4 / 5</string>
+    <string name="pass_phone_no">97781769</string>
+    <string name="passenger_location">9a, 2370, Orfeos, Agios Dometios, Nicosia, CY</string>
+
+    <string name="driver_name">  Anna Michael</string>
+    <string name="driver_field_of_study">  Mathematics, UCY</string>
+    <string name="driver_ranking">Driver Ranking: 4,5 / 5</string>
+    <string name="driver_phone_no">990124183</string>
+    <string name="driver_location">13, 2415, Ilia Papakyriakou, Egkomi, Nicosia, CY</string>
+
+
+
 </resources>
