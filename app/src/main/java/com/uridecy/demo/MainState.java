@@ -9,12 +9,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.uridecy.demo.MySingleton;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
 
@@ -37,6 +40,8 @@ public class MainState extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_state);
+
+        FirebaseMessaging.getInstance().subscribeToTopic("URIDECY");
     }
 
     public void showBottomSheet(View view) {
@@ -96,7 +101,7 @@ public class MainState extends AppCompatActivity
         String NOTIFICATION_MESSAGE;
         String TOPIC;
 
-        TOPIC = "/topics/userABC"; //topic must match with what the receiver subscribed to
+        TOPIC = "/topics/URIDECY"; //topic must match with what the receiver subscribed to
         NOTIFICATION_TITLE = "URideCY";
         NOTIFICATION_MESSAGE = "You have a new ride request!";
 
