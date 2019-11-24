@@ -1,7 +1,11 @@
 package com.example.trial2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainState extends AppCompatActivity
@@ -12,7 +16,6 @@ public class MainState extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_state);
-
     }
 
     public void showBottomSheet(View view) {
@@ -26,4 +29,24 @@ public class MainState extends AppCompatActivity
     public void onItemClick(String item) {
 
     }
+
+   public void logout (View view){
+       Intent intent = new Intent(this,LaunchScreen.class);
+       startActivity(intent);
+   }
+
+    public void viewReceivedRideRequests (View view){
+        Intent intent = new Intent(this,Request.class);
+        startActivity(intent);
+    }
+
+    public void viewSettings(View view){
+        Intent intent = new Intent(this,Settings.class);
+        startActivity(intent);
+    }
+
+    public void sendRequest(View view){
+        //fffff
+    }
+
 }

@@ -32,7 +32,8 @@
                 app:layout_constraintEnd_toStartOf="@+id/useIcon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logout" />
+                app:srcCompat="@drawable/logout"
+                android:onClick="logout"/>
 
             <ImageView
                 android:id="@+id/useIcon"
@@ -115,7 +116,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/settings"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="viewSettings"/>
 
             <Button
                 android:id="@+id/receivedRequests"
@@ -124,7 +126,8 @@
                 android:layout_marginTop="44dp"
                 android:text="@string/received_requests"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="viewReceivedRideRequests"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -184,7 +187,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.726"
-        app:srcCompat="@drawable/ride_request_button" />
+        app:srcCompat="@drawable/ride_request_button"
+        android:onClick="sendRequest"/>
 
     <Button
         android:id="@+id/button"

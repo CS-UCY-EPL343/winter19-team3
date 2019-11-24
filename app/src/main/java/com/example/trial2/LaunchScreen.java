@@ -60,5 +60,10 @@ public class LaunchScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToMainState(View view){
+        Intent intent = new Intent(this,MainState.class);
+        startActivity(intent);
+    }
+
 
 }

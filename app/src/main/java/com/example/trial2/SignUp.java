@@ -52,6 +52,8 @@ public class SignUp extends AppCompatActivity {
         Intent intent = new Intent(this,LaunchScreen.class);
         startActivity(intent);
     }
+
+
     private TextWatcher signUpTextWatcher  = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
