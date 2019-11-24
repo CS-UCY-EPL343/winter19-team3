@@ -1,4 +1,4 @@
-package com.example.trial2;
+package com.uridecy.demo;
 
 import org.junit.Test;
 

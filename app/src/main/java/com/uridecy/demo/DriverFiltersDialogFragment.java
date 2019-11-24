@@ -1,4 +1,4 @@
-package com.example.trial2;
+package com.uridecy.demo;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 
-import com.example.trial2.R;
+import com.uridecy.demo.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class DriverFiltersDialogFragment extends BottomSheetDialogFragment

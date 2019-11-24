@@ -1,4 +1,4 @@
-package com.example.trial2;
+package com.uridecy.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,8 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-
-import org.w3c.dom.Text;
 
 public class SignUp extends AppCompatActivity {
 

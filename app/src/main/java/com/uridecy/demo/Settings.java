@@ -1,8 +1,7 @@
-package com.example.trial2;
+package com.uridecy.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
