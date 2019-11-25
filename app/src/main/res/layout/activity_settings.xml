@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/pstitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textAlignment="textEnd"
+            android:textColor="#00070000"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            tools:srcCompat="@tools:sample/avatars"
+            android:focusable="true"
+            android:contentDescription="todo" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:text="General"
+            android:textColor="#0A0000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="First Name"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Last Name"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Age"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Phone Number"
+            tools:ignore="LabelFor,TextFields" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Residence Address"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Field Of Study "
+            tools:ignore="LabelFor" />
+
+        <Switch
+            android:id="@+id/driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Car Information"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Brand"
+            android:visibility="invisible"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Model"
+            android:visibility="invisible"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Color"
+            android:visibility="invisible"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/licenceplate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="Licence Plate"
+            android:visibility="invisible"
+            tools:ignore="LabelFor" />
+
+        <CheckBox
+            android:id="@+id/smoking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smoking Allowance"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Allowance"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/mobility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobility Scheme"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>

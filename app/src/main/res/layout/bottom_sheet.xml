@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textDriverRanking"
+            style="@style/ActionItem"
+            android:text="@string/driver_rank"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/driverRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:saveEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDriverRanking" />
+
+        <TextView
+            android:id="@+id/textResidenceDistrict"
+            style="@style/ActionItem"
+            android:text="@string/ResidenceDistrict"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/driverRanking" />
+
+        <Spinner
+            android:id="@+id/spinnerResidenceDistrict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/residenceDistricts"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textResidenceDistrict" />
+
+        <TextView
+            android:id="@+id/textFieldOfStudy"
+            style="@style/ActionItem"
+            android:layout_marginTop="8dp"
+            android:text="@string/field_of_studyText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerResidenceDistrict" />
+
+        <Spinner
+            android:id="@+id/spinnerFieldOfStudy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/fields_of_study"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFieldOfStudy" />
+
+        <TextView
+            android:id="@+id/textSmokingAllowance"
+            style="@style/ActionItem"
+            android:layout_marginTop="8dp"
+            android:text="@string/smoking_allowance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerFieldOfStudy" />
+
+        <RadioGroup
+            android:id="@+id/smokingAllowance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSmokingAllowance">
+
+            <RadioButton
+                android:id="@+id/yesSmokingAllowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/noSmokingAllowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+            <RadioButton
+                android:id="@+id/anySmokingAllowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/any" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textEatingAllowance"
+            style="@style/ActionItem"
+            android:layout_marginTop="8dp"
+            android:text="@string/eating_allowance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smokingAllowance" />
+
+        <RadioGroup
+            android:id="@+id/eatingAllowance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textEatingAllowance">
+
+            <RadioButton
+                android:id="@+id/yesEatingAllowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/noEatingAllowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+            <RadioButton
+                android:id="@+id/anyEatingAllowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/any" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textMobilityAccess"
+            style="@style/ActionItem"
+            android:layout_marginTop="8dp"
+            android:text="@string/mobility_access"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eatingAllowance" />
+
+        <RadioGroup
+            android:id="@+id/mobilityAccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMobilityAccess">
+
+            <RadioButton
+                android:id="@+id/yesMobilityAccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/noMobilityAccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+            <RadioButton
+                android:id="@+id/anyMobilityAccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/any" />
+
+        </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
